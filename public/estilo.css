@@ -1,0 +1,113 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+   background-image: url("ChatGPT\ Image\ 6_08_2026\,\ 11_11_07.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+
+.container{
+    max-width: 700px;
+    background: #F8CDD8;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+
+
+.logo-titulo {
+    max-width: 65%;
+    height: auto;   
+    display: block; 
+    margin: 0 auto;
+}
+
+.titulo h2{
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.titulo p{
+    margin: 0;
+    font-size: 16px;
+}
+
+
+.form-label{
+    color:#C75A83;
+    font-weight:600;
+}
+
+
+.form-control,
+.form-select,
+.input-group-text{
+    border-radius:10px;
+}
+
+.form-control,
+.form-select{
+    border:2px solid #dee2e6;
+    transition: .3s;
+}
+
+
+.form-control:focus,
+.form-select:focus{
+    border-color:#C75A83;
+    box-shadow:0 0 10px rgba(234, 163, 166);
+}
+
+
+textarea{
+    resize:none;
+}
+
+
+.btn{
+    border-radius:10px;
+    padding:10px 25px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-success{
+    background:#198754;
+    border:none;
+}
+
+.btn-warning{
+    color:#fff;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+
+.bi{
+    margin-right:5px;
+}
+
+
+@media(max-width:768px){
+
+    .container{
+        padding:25px;
+    }
+
+    .titulo h2{
+        font-size:26px;
+    }
+
+    .btn{
+        width:100%;
+        margin-bottom:10px;
+    }
+
+}
