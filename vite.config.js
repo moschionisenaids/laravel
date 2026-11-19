@@ -9,7 +9,8 @@ export default defineConfig({
             input: ['resources/css/app.css', 'resources/js/app.js',
                 'resources/js/cadastro_usuario.js',
                 'resources/js/login.js',
-                'resources/js/cadastro_produto.js'
+                'resources/js/cadastro_produto.js',
+                'resources/js/luzes.js',
             ],
             refresh: true,
             fonts: [

@@ -12,6 +12,7 @@ class Produto extends Model
         'nome_produto',
         'codigo',
         'estoque',
+        'limite_estoque_baixo',
         'categoria',
         'fornecedor',
         'data_validade',

@@ -18,4 +18,6 @@ Route::get('/nfc', [ComunicacaoController::class, 'nfc_html']);
 Route::get('/cadastro_usuario', [UsuarioController::class, 'cadastro_usuario_html']);
 Route::get('/bem-vindo', [principalcontroller::class, 'bem_vindo_html'])->middleware(LogadoMiddleware::class);
 Route::get('/estoque', [EstoqueController::class, 'estoque_produtos_html'])->middleware(LogadoMiddleware::class);
+Route::post('/produto/{id}/atualizar', [EstoqueController::class, 'atualizarProduto'])->middleware(LogadoMiddleware::class);
+Route::delete('/produto/{id}/excluir', [EstoqueController::class, 'excluirProduto'])->middleware(LogadoMiddleware::class);
 Route::get('/cadastro_produto', [CadastroProdutoController::class, 'cadastro_produto_html']);

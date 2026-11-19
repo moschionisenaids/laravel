@@ -1,8 +1,8 @@
-$(document).ready(function (){
 
-    $("#cadastro_usuario").click(function (){
+$(document).ready(function () {
 
-        
+    $("#cadastro_usuario").click(function () {
+
         $.ajax({
             url: "api/cadastro_usuario",
             method: "POST",
@@ -13,28 +13,36 @@ $(document).ready(function (){
                 data_nascimento: $("#data_nascimento").val(),
                 cpf: $("#cpf").val(),
             },
+
             success: function (response) {
+
                 console.log(response);
                 console.log(response['erro']);
-                if(response['erro'] == 'n'){
+
+                if (response['erro'] == 'n') {
+
                     Swal.fire({
                         icon: 'success',
                         title: 'Sucesso!',
-                        text: 'Cadastro realizado com sucesso!'
+                        text: 'Cadastro realizado com sucesso!',
+                        confirmButtonText: 'Ir para o login'
 
-                     }).then(() => {
-                        window.location.href = "/estoque";
-                        
+                    }).then(() => {
+                        window.location.href = "/login";
                     });
-                }else{
+
+                } else {
+
                     Swal.fire({
                         icon: 'error',
                         title: 'Erro!',
                         text: response['mensagem']
                     });
+
                 }
             }
         });
+
     });
 
 });
